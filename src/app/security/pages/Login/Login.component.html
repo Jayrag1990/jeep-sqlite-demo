@@ -1,0 +1,29 @@
+<div class="main pt25" style="text-align:center;" data-tap-disabled="true">
+  <div class="row setWidth mb10"
+    style="background-color: white; border-radius: 15px; color: #4a2d6a; padding: 20px; box-shadow:0px 0px 72px rgba(0,0,0,0.2);">
+    <form class="form-horizontal" name="userForm" novalidate>
+      <div class="col-md-12 checkbo no-padding">
+        <div class="col-md-6 col-xs-6 pl0 pr5">
+          <button type="button" ng-disabled="isDisabled" class="btn btn-success col-md-12"
+            style="margin-bottom:5px;width: 100%;" (click)="addItem()">Click here to add Item</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{item.Id}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.Title}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

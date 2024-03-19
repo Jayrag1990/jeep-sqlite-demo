@@ -1,0 +1,8 @@
+{
+  "name": "CR-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
